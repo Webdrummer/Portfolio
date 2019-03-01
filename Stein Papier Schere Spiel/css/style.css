@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: orange;
+}
+
+header {
+	text-align: center;
+	height: 70px;
+	background: lightgrey;
+	line-height: 70px;
+	border: 4px dotted black;
+}
+
+#game {
+	display: flex;
+	justify-content: center;
+}
+
+#scoreboard {
+	
+	border: 4px solid black;
+	min-width: 300px;
+	height: 200px;
+	border-radius: 10px;
+	position: relative;
+	text-align: center;	
+	font-size: 80px;
+	color: blue;
+}
+
+span {
+	line-height: 200px;
+}
+
+
+
+.badge {
+	position: absolute;
+	background: red;
+	color: white;
+	padding: 3px 5px;
+	font-size: 20px;
+}
+
+#user-label{
+	top: calc(50% - 15px);
+	left: -35px;
+}
+
+#computer-label{
+	top: calc(50% - 15px);
+	right: -45px;
+}
+
+#game {
+	padding: 20px 15%;
+}
+
+#Smiley {
+	margin-top: 15px;
+	margin-right: 50px;
+}
+
+#computer {
+	margin-left: 50px;
+	margin-top: -20px;
+	position: relative;
+}
+
+
+
+.c {
+	position: absolute;
+	left: calc(50% - 50px);
+	top: 40px;
+	text-align: center;
+	color: green;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.result {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.auswahl {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.auswahl > div {
+	border-radius: 50%;
+	padding: 15px;
+	margin: 0 20px;
+	transition: 500ms;
+}
+.choice {
+	border: 4px solid black;
+}
+
+.auswahl > div:hover {
+	background: lightgrey;
+}
+
+#action-message > p {
+	margin-top: 30px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: red;
+}
+
+.green-glow {
+	border: 4px solid green;
+	box-shadow: 0 0 10px darkgreen;
+}
+
+.red-glow {
+	border: 4px solid red; 
+	box-shadow: 0 0 10px darkred;
+}
+
+.grey-glow {
+	border: 4px solid grey;
+	box-shadow: 0 0 10px black;
+}
+
+
+
+

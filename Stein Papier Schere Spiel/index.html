@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Schere, Stein, Papier</title>
+</head>
+<body>
+	<header>
+		<h1>Let´s play: Schere, Stein, Papier!</h1>
+	</header>
+	<div id="game">
+		<div id="Smiley">
+			<img src="Images/happy.svg" width="170">
+		</div>
+		<div id="scoreboard">
+			<div class="badge" id="user-label">Spieler</div>
+			<div class="badge" id="computer-label">Computer</div>
+			<span id="userscore">0</span>:<span id="computerscore">0</span>
+		</div>
+		<div id="computer">
+			<img src="Images/computer.svg" width="240">
+			<div class="c">
+				<div>Stein</div>	
+				<img src="Images/Rock.svg" width="90">
+			</div>
+		</div>
+	</div>
+	<div class="result">
+		<p>Wähle Schere, Stein oder Papier!</p>
+	</div>
+	<div class="auswahl">
+		<div id="r" class="choice">
+			<img src="Images/Rock.svg" width="170">
+		</div>
+		<div id="p" class="choice">
+			<img src="Images/Paper.svg" width="170">
+		</div>
+		<div id="s" class="choice">
+			<img src="Images/Scissors.svg" width="170">
+		</div>
+	</div>
+	<div id="action-message">
+		<p>Klicke auf eins der drei Symbole!</p>
+	</div>
+	<script src="spiel.js"></script>
+</body>
+</html>
