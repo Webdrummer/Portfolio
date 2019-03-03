@@ -9,11 +9,15 @@ const scissors_div = document.getElementById('s');
 let Smiley_img = document.querySelector('#Smiley > img');
 let computerChoice_img = document.querySelector('.c img');
 
+// convertToWord wird für das Spielergebnis in der Textausgabe verwendet.
+
 function convertToWord(letter) {
 	if (letter === "r") return "Stein";
 	if (letter === "p") return "Papier";
 		return "Schere";
 }
+
+// getcomputerChoice bestimmt eine zufällige Zahl (0, 1 oder 2) und wählt damit r, p oder s aus dem Array choices!
 
 function getcomputerChoice() {
 	let choices = ['r', 'p', 's'];
@@ -34,6 +38,8 @@ function getcomputerChoice() {
 	return choices[randomNumber]; 
 }
 
+// win, lose und draw sind jeweils Funktionen. Verändert wird jeweils der Zählerstand im scoreboard und es werden versch. Smileys eingeblended.
+// bei win wird der border des geklickten Elements grün, bei lose rot und bei draw grau gefärbt!
 function win(userChoice, computerChoice) {
 	userScore++;
 	userScore_span.textContent = userScore;
@@ -64,7 +70,7 @@ function draw(userChoice, computerChoice) {
 	setTimeout(() => userChoice_div.classList.remove('grey-glow'), 500);
 }
 
-function game(userChoice) {
+function game(userChoice) {				// die Funktion game ermittelt ob gewonnen, verloren und unentschieden wird!
 	const computerChoice = getcomputerChoice();
 	switch (userChoice + computerChoice) {
 		case "rs":
@@ -86,7 +92,7 @@ function game(userChoice) {
 }
 
 
-function main() {
+function main() {						// Via Mausklick wird der Funktion game ein Argument r p oder s übergeben!
 	rock_div.addEventListener('click', () => game('r'));
 	paper_div.addEventListener('click', () => game('p'));
 	scissors_div.addEventListener('click', () => game('s'));
